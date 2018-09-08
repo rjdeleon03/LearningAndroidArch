@@ -1,4 +1,4 @@
-package com.rjdeleon.androidarch;
+package com.rjdeleon.androidarch.Root;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,6 +1,9 @@
-package com.rjdeleon.androidarch;
+package com.rjdeleon.androidarch.Root;
 
 import android.app.Application;
+
+import com.rjdeleon.androidarch.Login.LoginModule;
+
 
 public class App extends Application {
 
@@ -12,6 +15,7 @@ public class App extends Application {
 
         component = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
+                .loginModule(new LoginModule())
                 .build();
 
     }
